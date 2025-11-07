@@ -17,6 +17,9 @@ export { SuggestionChips } from './components/advanced/SuggestionChips';
 export { LiveCaptions } from './components/advanced/LiveCaptions';
 export { SentimentDisplay } from './components/advanced/SentimentDisplay';
 
+// Enterprise Components
+export { VoiceCommandPalette } from './components/enterprise/VoiceCommandPalette';
+
 // Hooks
 export { useVoiceState, useSpeechRecognition, useAudioVisualization, useAI } from './hooks';
 
@@ -75,3 +78,57 @@ export type {
 } from './ai/types';
 
 export type { Suggestion } from './components/advanced/SuggestionChips';
+
+// Voice Commands
+export {
+  VoiceCommandRecognizer,
+  navigationCommands,
+  mediaCommands,
+  systemCommands,
+  productivityCommands,
+  communicationCommands,
+  allPresetCommands,
+  commandCategories,
+} from './features/voice-commands';
+
+export type {
+  VoiceCommand,
+  CommandIntent,
+  CommandCategory,
+  VoiceCommandsConfig,
+} from './features/voice-commands';
+
+// Function Calling
+export {
+  AIFunctionRegistry,
+  weatherFunction,
+  calculatorFunction,
+  searchFunction,
+  reminderFunction,
+  emailFunction,
+  calendarFunction,
+  presetFunctions,
+} from './features/function-calling';
+
+export type {
+  FunctionDefinition,
+  FunctionCall,
+  FunctionResult,
+  FunctionHandler,
+  FunctionRegistry,
+} from './features/function-calling';
+
+// Conversation Memory
+export { ConversationMemoryStore } from './features/memory';
+
+export type {
+  ConversationMemory,
+  MemorySearchOptions,
+  MemorySearchResult,
+  MemoryStats,
+} from './features/memory';
+
+// Internationalization
+export { languages, translations } from './features/i18n';
+
+export type { Language, TranslationKey, Translations } from './features/i18n';

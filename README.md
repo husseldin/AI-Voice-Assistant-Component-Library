@@ -52,6 +52,13 @@ Build stunning voice-enabled applications with breathtaking animations for web a
 - Sunset Orange ✨ NEW
 - Minimal White ✨ NEW
 
+### Enterprise Features ✨ NEW
+- **Voice Commands** - 18 preset commands + custom command support
+- **Function Calling** - AI can call functions in your app
+- **Conversation Memory** - RAG-like memory system (1000+ memories)
+- **Multi-Language** - 12 languages with RTL support
+- **Command Palette** - VS Code-style command search
+
 ### Platforms
 - ✅ **Web** - Full support with WebGL and Canvas
 - ✅ **React Native** - Complete mobile support (see [React Native Guide](./docs/REACT_NATIVE.md))
@@ -503,6 +510,7 @@ voiceui-pro/
 ## 📚 Documentation
 
 - [React Native Guide](./docs/REACT_NATIVE.md)
+- [Enterprise Features Guide](./docs/ENTERPRISE_FEATURES.md) ✨ NEW
 - [Component API Reference](./docs/COMPONENTS.md)
 - [Theming Guide](./docs/THEMING.md)
 - [AI Integration Guide](./docs/INTEGRATION.md)
