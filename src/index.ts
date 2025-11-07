@@ -8,14 +8,40 @@ export { StatusIndicator } from './components/core/StatusIndicator';
 export { ActionCard } from './components/interactive/ActionCard';
 export { VoiceButton } from './components/interactive/VoiceButton';
 
+// Advanced Components
+export { ThreeDVoiceOrb } from './components/advanced/ThreeDVoiceOrb';
+export { Spectrogram } from './components/advanced/Spectrogram';
+export { CircularSpectrum } from './components/advanced/CircularSpectrum';
+export { ChatInterface } from './components/advanced/ChatInterface';
+export { SuggestionChips } from './components/advanced/SuggestionChips';
+export { LiveCaptions } from './components/advanced/LiveCaptions';
+export { SentimentDisplay } from './components/advanced/SentimentDisplay';
+
 // Hooks
-export { useVoiceState, useSpeechRecognition, useAudioVisualization } from './hooks';
+export { useVoiceState, useSpeechRecognition, useAudioVisualization, useAI } from './hooks';
 
 // Context
 export { ThemeProvider, useTheme } from './context';
 
 // Themes
-export { purpleDreamTheme, blueOceanTheme } from './themes';
+export {
+  purpleDreamTheme,
+  blueOceanTheme,
+  darkModeTheme,
+  neonCyberpunkTheme,
+  forestGreenTheme,
+  sunsetOrangeTheme,
+  minimalWhiteTheme,
+} from './themes';
+
+// AI Providers
+export {
+  OpenAIProvider,
+  OllamaProvider,
+  AnthropicProvider,
+  MockLocalProvider,
+  CustomProvider,
+} from './ai/providers';
 
 // Types
 export type {
@@ -35,3 +61,17 @@ export type {
   UseAudioVisualizationReturn,
   Action,
 } from './types';
+
+export type {
+  AIMessage,
+  AIStreamChunk,
+  AIProvider,
+  AIProviderConfig,
+  AIContextMessage,
+  UseAIReturn,
+  TranscriptionResult,
+  SentimentResult,
+  IntentResult,
+} from './ai/types';
+
+export type { Suggestion } from './components/advanced/SuggestionChips';
